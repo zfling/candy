@@ -1,0 +1,42 @@
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=733558
+	// for the documentation about the tasks.json format
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Test -> test",
+			"type": "shell",
+			"command": "${workspaceFolder}\\.vscode\\command.cmd",
+			"args": ["test"],
+			"problemMatcher": []
+		},
+		{
+			"label": "Get Files -> get files",
+			"type": "shell",
+			"command": "${workspaceFolder}\\.vscode\\command.cmd",
+			"args": ["get"],
+			"problemMatcher": []
+		},
+		{
+			"label": "Rsync -> Rsync Code to Linux [increment]",
+			"type": "shell",
+			"command": "${workspaceFolder}\\.vscode\\command.cmd",
+			"args": ["rsync", "increment"],
+			"problemMatcher": []
+		},
+		{
+			"label": "Rsync -> Rsync Code to Linux [total]",
+			"type": "shell",
+			"command": "${workspaceFolder}\\.vscode\\command.cmd",
+			"args": ["rsync", "total"],
+			"problemMatcher": []
+		},
+		{
+			"label": "Run -> Run the code",
+			"type": "shell",
+			"command": "${workspaceFolder}\\.vscode\\command.cmd",
+			"args": ["run"],
+			"problemMatcher": []
+		},
+	]
+}
